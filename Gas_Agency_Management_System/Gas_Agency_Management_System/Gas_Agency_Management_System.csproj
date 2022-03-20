@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15398336-C06A-4997-A75E-76BECF5112E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gas_Agency_Management_System</RootNamespace>
+    <AssemblyName>Gas_Agency_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dataset\ds_Customer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_Customer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ds_Customer_Payment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_Customer_Payment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Complaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Complaint.Designer.cs">
+      <DependentUpon>frm_Complaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Splash.Designer.cs">
+      <DependentUpon>frm_Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Sale_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Sale_Stock.Designer.cs">
+      <DependentUpon>frm_View_Sale_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Search_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Search_Customer.Designer.cs">
+      <DependentUpon>frm_Search_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Cylinder_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Cylinder_Stock.Designer.cs">
+      <DependentUpon>frm_View_Cylinder_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_All_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_All_Booking.Designer.cs">
+      <DependentUpon>frm_View_All_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gas Agency Management System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gas Agency Management System.Designer.cs">
+      <DependentUpon>Gas Agency Management System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Booking.Designer.cs">
+      <DependentUpon>frm_Add_New_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login_Screen.Designer.cs">
+      <DependentUpon>frm_Login_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Customer.Designer.cs">
+      <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Payments.Designer.cs">
+      <DependentUpon>frm_Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Set_Cylinder_Price.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Set_Cylinder_Price.Designer.cs">
+      <DependentUpon>frm_Set_Cylinder_Price.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Stock.Designer.cs">
+      <DependentUpon>frm_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Customer.Designer.cs">
+      <DependentUpon>frm_Update_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_All_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_All_Customer.Designer.cs">
+      <DependentUpon>frm_View_All_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Vars.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\crpt_Customer_Booking_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_Customer_Booking_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crpt_Customer_Complaint_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_Customer_Complaint_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crpt_Customer_Payment_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_Customer_Payment_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crpt_Cylinder_Stock_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_Cylinder_Stock_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crpt_Sale_Cylinder_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_Sale_Cylinder_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crpt_Single_Customer_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_Single_Customer_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Customer_Booking_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Customer_Booking_Report.Designer.cs">
+      <DependentUpon>frm_Customer_Booking_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Customer_Complaint_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Customer_Complaint_Report.Designer.cs">
+      <DependentUpon>frm_Customer_Complaint_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Customer_Payment_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Customer_Payment_Report.Designer.cs">
+      <DependentUpon>frm_Customer_Payment_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Cylinder_Stock_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Cylinder_Stock_Report.Designer.cs">
+      <DependentUpon>frm_Cylinder_Stock_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Sale_Cylinder_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Sale_Cylinder_Report.Designer.cs">
+      <DependentUpon>frm_Sale_Cylinder_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Single_Customer_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Single_Customer_Report.Designer.cs">
+      <DependentUpon>frm_Single_Customer_Report.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_Complaint.resx">
+      <DependentUpon>frm_Complaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Splash.resx">
+      <DependentUpon>frm_Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Sale_Stock.resx">
+      <DependentUpon>frm_View_Sale_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Search_Customer.resx">
+      <DependentUpon>frm_Search_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Cylinder_Stock.resx">
+      <DependentUpon>frm_View_Cylinder_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_All_Booking.resx">
+      <DependentUpon>frm_View_All_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gas Agency Management System.resx">
+      <DependentUpon>Gas Agency Management System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Booking.resx">
+      <DependentUpon>frm_Add_New_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login_Screen.resx">
+      <DependentUpon>frm_Login_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Customer.resx">
+      <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Payments.resx">
+      <DependentUpon>frm_Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Set_Cylinder_Price.resx">
+      <DependentUpon>frm_Set_Cylinder_Price.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Stock.resx">
+      <DependentUpon>frm_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Customer.resx">
+      <DependentUpon>frm_Update_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_All_Customer.resx">
+      <DependentUpon>frm_View_All_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\crpt_Customer_Booking_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_Customer_Booking_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crpt_Customer_Complaint_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_Customer_Complaint_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crpt_Customer_Payment_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_Customer_Payment_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crpt_Cylinder_Stock_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_Cylinder_Stock_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crpt_Sale_Cylinder_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_Sale_Cylinder_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crpt_Single_Customer_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_Single_Customer_Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frm_Customer_Booking_Report.resx">
+      <DependentUpon>frm_Customer_Booking_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frm_Customer_Complaint_Report.resx">
+      <DependentUpon>frm_Customer_Complaint_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frm_Customer_Payment_Report.resx">
+      <DependentUpon>frm_Customer_Payment_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frm_Cylinder_Stock_Report.resx">
+      <DependentUpon>frm_Cylinder_Stock_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frm_Sale_Cylinder_Report.resx">
+      <DependentUpon>frm_Sale_Cylinder_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frm_Single_Customer_Report.resx">
+      <DependentUpon>frm_Single_Customer_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Dataset\ds_Customer.xsc">
+      <DependentUpon>ds_Customer.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_Customer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_Customer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_Customer.xss">
+      <DependentUpon>ds_Customer.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_Customer_Payment.xsc">
+      <DependentUpon>ds_Customer_Payment.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ds_Customer_Payment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_Customer_Payment.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\ds_Customer_Payment.xss">
+      <DependentUpon>ds_Customer_Payment.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1024607144-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gas cyl. %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cylinder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cylinder %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
